@@ -1,34 +1,6 @@
 import './App.css';
-// import { Chart, registerPlugins } from 'chart.js';
-// import { BarController, BarElement, CategoryScale, LinearScale } from 'chart.js/dist/types/index';
-
-// registerPlugins(BarController, BarElement, CategoryScale, LinearScale); 
-
+import { Pie } from './Components/pie';
 function App() {
-  // const data = {
-  //   labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5', 'Label 6'],
-  //   datasets: [{
-  //     label: 'Data Set',
-  //     backgroundColor: 'rgba(255, 99, 132, 0.2)',
-  //     borderColor: 'rgba(255, 99, 132, 1)',
-  //     borderWidth: 1,
-  //     data: [12, 19, 3, 5, 2, 9]
-  //   }]
-  // };
-
-//   const ctx = document.getElementById('myChart').getContext('2d');
-// const myChart = new Chart(ctx, {
-//   type: 'bar',
-//   data: data,
-//   options: {
-//     scales: {
-//       y: {
-//         beginAtZero:   
-//  true
-//       }
-//     }
-//   }
-// });
   return (
     <div className="App">
       <div className='navbar'>
@@ -79,7 +51,12 @@ function App() {
           <div className='promoimg'></div>
         </div>
         <div className='chart1'>
-        <canvas id="myChart"></canvas>
+          <p className='chart1title'>Stocks</p>
+        <Pie/>
+        </div>
+        <div className='chart2'>
+          <p className='chart1title'>Graph</p>
+          <div className='graph'></div>
         </div>
       </div>
     </div>
